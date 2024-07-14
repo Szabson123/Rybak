@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    background-color: #ECFCFF;
+}
+/* TOPPER */
+.topper-section{
+    background-image: url(pictures/Tło.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.topper{
+    padding-top: 150px;
+    padding-right: 40%;
+}
+.title{
+    text-align: center;
+    font-family: "Tinos", serif;
+    color: white;
+    font-size: 95px;
+    font-weight: 700;
+}
+.description{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    padding-right: 5%;
+}
+
+/* learn-section */
+
+.img-learn{
+    height: 517px;
+    width: 440px;
+}
+
+.sub-title{
+    font-family: "Roboto Slab", serif;
+    font-size: 65px;
+    text-align: center;
+}
+.flex-3{
+    padding-left: 13%;
+    padding-right: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-3-item{
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
+}
+.learn-title{
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 41px;
+    align-items: center;
+    text-align: center; 
+}
+.list-learn-item{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 10px;
+}
