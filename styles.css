@@ -198,6 +198,9 @@ body{
     font-style: normal;
     font-size: 48px;
     text-align: center;
+    opacity: 0; 
+    transition: opacity 1.5s ease-in-out;
+    min-width: 100px;
 }
 .about-pic{
     width: 665px;
@@ -272,4 +275,15 @@ body{
     padding-bottom: 20px;
     text-align: center;
     max-width: 80%;
+}
+
+.pretty-container {
+    height: 110px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+.margin-bottom-galery{
+    margin-bottom: 60px;
 }

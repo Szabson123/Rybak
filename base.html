@@ -24,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -104,7 +106,7 @@
     </div>
   </section>
   <section>
-    <div>
+    <div class="margin-bottom-galery">
       <div class="galery-cont">
         <hr class="short-hr">
         <h2 class="sub-title" id="galery">Rybacka Galeria Naszych Skarbów</h2>
@@ -125,7 +127,9 @@
   </section>
   <section class="about">
     <div class="about-section">
-      <h2 class="pretty">"Odkąd łowię ryby, wiem jedno – największe historie o poławianiu zaczynają się od 'prawie złapałem!'"</h2>
+      <div class="pretty-container">
+        <h2 class="pretty">"Odkąd łowię ryby, wiem jedno – największe historie o poławianiu zaczynają się od 'prawie złapałem!'"</h2>
+      </div>
       <div class="flex-2" id="margin-top">
         <div class="flex-2-item">
           <img class="about-pic" src="pictures/O_naszej.png" alt="">
@@ -172,6 +176,8 @@
   <section>
     <div>
       <h1>HALO MOTO</h1>
+      <div id="map"></div>
+      <script src="scripts.js"></script>
     </div>
   </section>
 </body>
