@@ -245,7 +245,8 @@ body{
 }
 .green-background{
     padding: 40px;
-    background-color: #C8D8BE;
+    background: linear-gradient(to right, #C8D8BE, #6A7264);
+    box-shadow: 8px 8px 6px 4px lightgrey;
 }
 .last-pic{
     width: 597px;
@@ -278,7 +279,7 @@ body{
 }
 
 .pretty-container {
-    height: 110px; 
+    height: 120px; 
     display: flex;
     align-items: center;
     justify-content: center;
