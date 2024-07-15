@@ -15,7 +15,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -67,71 +75,103 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="container">
     <div class="flex-2">
       <div class="flex-2-item">
-        <img src="" alt="">
+        <img class="ourprogram-image" src="pictures/Nasz_program.png" alt="">
       </div>
       <div class="flex-2-item">
-        <h3>Nasz Program</h3>
-        <p>
-          Witaj w Szkółce Wędkarskiej Mazury, miejscu, gdzie Twoja przygoda z wędkowaniem nabiera nowego wymiaru.
-          Położona w sercu malowniczych Mazur, nasza szkółka łączy pasję do wędkowania z miłością do natury.
-          Oferujemy szeroki zakres kursów i warsztatów wędkarskich, skierowanych zarówno do początkujących, jak i doświadczonych wędkarzy.
-        </p>
-        <p>
-          Nasza misja to nie tylko nauczanie technik wędkarskich, ale także promowanie zrównoważonego wędkowania i ochrony środowiska. Nasi doświadczeni
-          instruktorzy przekażą Ci wiedzę i umiejętności, które pozwolą cieszyć się wędkowaniem w harmonii z naturą. Podczas naszych zajęć nauczysz się obsługi
-          sprzętu wędkarskiego, rozpoznawania gatunków ryb, a także najlepszych praktyk związanych z ekologią i ochroną środowiska.
-        </p>
-        <p>Poznaj Szczegóły Programu</p>
+        <div class="white-background">
+          <h3 class="ourprogram-title">Nasz Program</h3>
+          <p class="ourprogram-desc">
+            Witaj w Szkółce Wędkarskiej Mazury, miejscu, gdzie Twoja przygoda z wędkowaniem nabiera nowego wymiaru.
+            Położona w sercu malowniczych Mazur, nasza szkółka łączy pasję do wędkowania z miłością do natury.
+            Oferujemy szeroki zakres kursów i warsztatów wędkarskich, skierowanych zarówno do początkujących, jak i doświadczonych wędkarzy.
+          </p>
+          <p class="ourprogram-desc">
+            Nasza misja to nie tylko nauczanie technik wędkarskich, ale także promowanie zrównoważonego wędkowania i ochrony środowiska. Nasi doświadczeni
+            instruktorzy przekażą Ci wiedzę i umiejętności, które pozwolą cieszyć się wędkowaniem w harmonii z naturą. Podczas naszych zajęć nauczysz się obsługi
+            sprzętu wędkarskiego, rozpoznawania gatunków ryb, a także najlepszych praktyk związanych z ekologią i ochroną środowiska.
+          </p>
+          <div class="ourprogram-details">
+            <p class="ourprogram-down">Poznaj Szczegóły Programu</p>
+            <div class="arrow-container">
+              <img class="arrow" src="pictures/Arrow_1.png" alt="strzałka">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <section>
-    <hr>
-    <h2>Rybacka Galeria Naszych Skarbów</h2>
-    <div class="galery">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <p>Zobacz więcej naszych wypraw wędkarskich</p>
+    <div>
+      <div class="galery-cont">
+        <hr class="short-hr">
+        <h2 class="sub-title" id="galery">Rybacka Galeria Naszych Skarbów</h2>
+      </div>  
+      <div class="galery">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <div class="galery-details">
+          <p class="galery-down">Poznaj więcej naszych wypraw wędkarskich</p>
+          <div class="arrow-container">
+            <img class="arrow" src="pictures/Arrow_1.png" alt="strzałka">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section>
-    <h2>"Odkąd łowię ryby, wiem jedno – największe historie o poławianiu zaczynają się od 'prawie złapałem!'"</h2>
-    <div class="flex-2">
-      <div class="flex-2-item">
-        <img src="" alt="">
+  <section class="about">
+    <div class="about-section">
+      <h2 class="pretty">"Odkąd łowię ryby, wiem jedno – największe historie o poławianiu zaczynają się od 'prawie złapałem!'"</h2>
+      <div class="flex-2" id="margin-top">
+        <div class="flex-2-item">
+          <img class="about-pic" src="pictures/O_naszej.png" alt="">
+        </div>
+        <div class="flex-2-item" id="about-center">
+          <div class="max-width">
+            <h4 class="about-title">O NASZEJ SZKÓŁCE</h4>
+            <h5 class="about-subtitle">Wyrusz na wodę razem z nami i odkryj wędkarskie przygody na Mazurach!</h5>
+            <p class="about-desc">
+              Jesteśmy pasjonatami wędkarstwa i miłośnikami przyrody, którzy chcą dzielić się swoją wiedzą i doświadczeniem z innymi.
+               Nasza szkółka znajduje się w sercu pięknych Mazur, otoczona malowniczymi jeziorami i bujnymi lasami.
+            </p>
+            <p class="about-desc">
+              Wierzymy, że wędkarstwo to coś więcej niż hobby to sposób na życie, który uczy cierpliwości, szacunku do natury i umiejętności obserwacji.
+            </p>
+            <div class="ourprogram-details">
+              <p class="ourprogram-down">Dowiedz się o nas więcej</p>
+              <div class="arrow-container">
+                <img class="arrow" id="shorter" src="pictures/Arrow_1.png" alt="strzałka">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="green-background">
       <div class="flex-2">
-        <h4>O NASZEJ SZKÓŁCE</h4>
-        <h5>Wyrusz na wodę razem z nami i odkryj wędkarskie przygody na Mazurach!</h5>
-        <p>
-          Jesteśmy pasjonatami wędkarstwa i miłośnikami przyrody, którzy chcą dzielić się swoją wiedzą i doświadczeniem z innymi.
-           Nasza szkółka znajduje się w sercu pięknych Mazur, otoczona malowniczymi jeziorami i bujnymi lasami.
-        </p>
-        <p>
-          Wierzymy, że wędkarstwo to coś więcej niż hobby to sposób na życie, który uczy cierpliwości, szacunku do natury i umiejętności obserwacji.
-        </p>
-        <p>Dowiedz się o nas więcej</p>
+        <div class="flex-2-item">
+          <h4 class="last-title">Zapisz się już teraz i odkryj tajniki wędkarstwa z Szkółką Mazury!</h4>
+          <p class="last-desc">
+            Zapewniamy niezapomniane doświadczenia na wodzie. Dołącz do naszej społeczności wędkarzy
+            i poznaj tajniki łowienia z pasją i profesjonalizmem. Przygotuj się na niezapomnianą przygodę z Szkółką Wędkarską Mazury!
+          </p>
+          <p class="big-button">KONTAKT</p>
+        </div>
+        <div class="flex-2-item">
+          <img class="last-pic" src="pictures/rybak-last.png" alt="">
+        </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="flex-2">
-      <div class="flex-2-item">
-        <h4>Zapisz się już teraz i odkryj tajniki wędkarstwa z Szkółką Mazury!</h4>
-        <p>
-          Zapewniamy niezapomniane doświadczenia na wodzie. Dołącz do naszej społeczności wędkarzy
-          i poznaj tajniki łowienia z pasją i profesjonalizmem. Przygotuj się na niezapomnianą przygodę z Szkółką Wędkarską Mazury!
-        </p>
-        <p>KONTAKT</p>
-      </div>
-      <div class="flex-2-item">
-        <img src="" alt="">
-      </div>
+    <div>
+      <h1>HALO MOTO</h1>
     </div>
   </section>
 </body>
