@@ -5,7 +5,7 @@ body{
 /* TOPPER */
 .topper-section{
     background-image: url(pictures/Tło.png);
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -48,7 +48,8 @@ body{
     padding-left: 13%;
     padding-right: 13%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 .flex-3-item{
     flex: 1;
@@ -77,21 +78,22 @@ body{
     font-size: 26px;
     margin-top: 10px;
 }
-.ourprogram-desc{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-}
-.flex-2{
+.flex-2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-.flex-2-item{
+
+.flex-2-item {
+    flex: 1 1 auto; 
     margin-left: 2%;
     margin-right: 2%;
+    min-width: 650px;
+    max-width: 660px; 
+    margin: 20px 0; 
 }
 .ourprogram-title{
     margin-top: 0;
@@ -101,11 +103,13 @@ body{
     align-items: center;
     text-align: center; 
 }
-.container{
-    margin-top: 100px;
-    padding-left: 12%;
-    padding-right: 12%;
-    margin-bottom: 150px;
+.ourprogram-desc{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
 }
 .white-background{
     background-color: white;
@@ -117,6 +121,7 @@ body{
     padding: 30px;
 }
 .ourprogram-image{
+    display: block;
     width: 670px;
     height: 670px;
 }
@@ -200,7 +205,7 @@ body{
     text-align: center;
     opacity: 0; 
     transition: opacity 1.5s ease-in-out;
-    min-width: 100px;
+    min-width: 110px;
 }
 .about-pic{
     width: 665px;
@@ -249,6 +254,7 @@ body{
     box-shadow: 8px 8px 6px 4px lightgrey;
 }
 .last-pic{
+    display: block;
     width: 597px;
     height: 398;
 }
@@ -287,4 +293,163 @@ body{
 }
 .margin-bottom-galery{
     margin-bottom: 60px;
+}
+
+
+.flex2-test{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex2-test-item{
+    flex: 1;
+    font-size: 40px;
+}
+#blue{
+    background-color: blue;
+}
+
+@media (max-width: 1400px){
+    .topper-section{
+        background-image: url(pictures/Tło-little.png);
+    }
+    
+    .img-learn{
+        height: 477px;
+        width: 400px;
+    }
+
+    .flex-2{
+        flex-direction: column;
+    }
+    .flex-2-item{
+        margin-left: 15%;
+        margin-right: 15%;
+        min-width: 600px;
+    }
+}
+@media (max-width: 1200px){
+    .topper-section{
+        background-image: url(pictures/Tło-little-more.png);
+    }
+    .img-learn{
+        height: 390px;
+        width: 320px;
+    }
+    .learn-title{
+        margin: 0;
+    }
+    .sub-item{
+        max-width: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .topper-section{
+        background-image: url(pictures/Tło-1000px.png);
+    }
+    .topper{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 0;
+    }
+    .description{
+        font-weight: 300;
+        font-size: 30px;
+        padding-right: 0;
+
+    }
+
+    .flex-3{
+        flex-direction: column;
+        padding: 0;
+    }
+    .sub-item{
+        max-width: 70%;
+    }
+    
+}
+@media (max-width: 800px){
+    .topper-section{
+        background-image: url(pictures/Tło-tel.png);
+    }
+    .img-learn{
+        height: 390px;
+        width: 330px;
+    }
+
+    .learn-title{
+        margin-top: 20px;
+        font-size: 31px;
+    }
+    .list-learn-item{
+        font-size: 21px;
+        margin-top: 0px;
+    }
+    .sub-item{
+        max-width: 100%;
+    }
+    .pretty{
+        font-size: 30px;
+        min-width: 120px;
+    }
+    .last-pic{
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .ourprogram-title{
+        font-weight: 600;
+        font-size: 31px;
+    }
+    .ourprogram-desc{
+        font-size: 20px;
+    
+    }
+    .ourprogram-image {
+    display: block;
+    max-width: 100%; 
+    height: 470px;
+    width: 470px; 
+    margin: 0 auto; 
+    }
+    .flex-2-item{
+        max-width: 460px; 
+        min-width: 460px; 
+    }
+}
+
+@media (max-width: 500px){
+    .topper{
+        padding-top: 15%;
+        padding-bottom: 5%;
+        padding-right: 0;
+    }
+    .title{
+        font-size: 70px;
+    }
+    .description{
+        font-weight: 300;
+        font-size: 30px;
+        padding-right: 0;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .topper{
+        padding-top: 10%;
+    }
+    .description{
+        font-size: 25px;
+    }
+    .ourprogram-image {
+    max-width: 100%; 
+    height: 370px;
+    width: 370px; 
+    margin: 0 auto; 
+    }
+    .flex-2-item{
+        max-width: 360px; 
+        min-width: 360px; 
+    }
 }
