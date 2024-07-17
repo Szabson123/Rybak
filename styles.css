@@ -1,3 +1,15 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+
+}
+  
+
 body{
     margin: 0;
     background-color: #ECFCFF;
@@ -17,13 +29,15 @@ body{
     padding-right: 40%;
 }
 .title{
+    animation: fadeIn 2s ease-in-out;
     text-align: center;
     font-family: "Tinos", serif;
     color: white;
     font-size: 95px;
     font-weight: 700;
 }
-.description{
+.description{ 
+    animation: slideInLeft 2s ease-in-out;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     font-size: 36px;
