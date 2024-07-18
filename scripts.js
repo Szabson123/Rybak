@@ -35,7 +35,17 @@ function changeText() {
     }, 1500);
 }
 
-
 setInterval(changeText, 5000);
 
 changeText();
+
+// Animations effects
+
+document.addEventListener("DOMContentLoaded", function(){
+    const titleElement = document.querySelector('.title');
+    const descElement = document.querySelector('.description');
+
+    titleElement.addEventListener('animationend', function(){
+        descElement.style.animation = 'slide-left 2s forwards';
+    });
+});

@@ -1,12 +1,21 @@
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-@keyframes slideInLeft {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
   
 
@@ -28,7 +37,7 @@ body{
     padding-top: 150px;
     padding-right: 40%;
 }
-.title{
+.title {
     animation: fadeIn 2s ease-in-out;
     text-align: center;
     font-family: "Tinos", serif;
@@ -36,8 +45,9 @@ body{
     font-size: 95px;
     font-weight: 700;
 }
-.description{ 
-    animation: slideInLeft 2s ease-in-out;
+
+.description {
+    opacity: 0; 
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     font-size: 36px;
@@ -45,6 +55,7 @@ body{
     text-align: center;
     padding-right: 5%;
 }
+
 
 /* learn-section */
 
@@ -99,6 +110,7 @@ body{
     flex-wrap: nowrap;
     padding-left: 2%;
     padding-right: 2%;
+    gap: 30px;
 }
 
 .flex-2-item {
@@ -341,6 +353,11 @@ body{
         margin-right: 15%;
         min-width: 600px;
     }
+
+    .pretty{
+        font-size: 35px;
+        min-width: 100px;
+    }
 }
 @media (max-width: 1200px){
     .topper-section{
@@ -367,7 +384,7 @@ body{
         padding-right: 0;
     }
     .description{
-        font-weight: 300;
+        font-weight: 400;
         font-size: 30px;
         padding-right: 0;
 
@@ -409,6 +426,9 @@ body{
     .last-pic{
         display: none;
     }
+    .about{
+        margin: 0;
+    }
 }
 @media (max-width: 650px) {
     .ourprogram-title{
@@ -442,7 +462,6 @@ body{
         font-size: 70px;
     }
     .description{
-        font-weight: 300;
         font-size: 30px;
         padding-right: 0;
 
