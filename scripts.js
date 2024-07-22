@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('our-prog');
     const cards = document.querySelectorAll('.card');
     const flexItems = document.querySelectorAll('.flex-2-item');
 
