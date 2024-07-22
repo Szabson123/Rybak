@@ -46,6 +46,36 @@ document.addEventListener("DOMContentLoaded", function(){
     const descElement = document.querySelector('.description');
 
     titleElement.addEventListener('animationend', function(){
-        descElement.style.animation = 'slide-left 2s forwards';
+        descElement.style.animation = 'slide-left 1s forwards';
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+    const flexItems = document.querySelectorAll('.flex-2-item');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Przestań obserwować element po uruchomieniu animacji
+            }
+        });
+    }, observerOptions);
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+
+    flexItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+

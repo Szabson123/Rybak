@@ -17,7 +17,75 @@
         opacity: 1;
     }
 }
-  
+
+@keyframes slide-left-our {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right-our {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .flex-2-item {
+        opacity: 0; /* Ukryj elementy początkowo */
+    }
+    .flex-2-item-left.in-view {
+        animation: slide-left-our 1.5s ease-out forwards;
+    }
+    .flex-2-item-right.in-view {
+        animation: slide-right-our 1.5s ease-out forwards;
+    }
+}
+
+
+@keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card {
+        opacity: 0; 
+    }
+    .card.in-view {
+        animation: slide-fade-in 1s both;
+    }
+    .flex-3-item.in-view {
+        animation-delay: 0.5s; 
+    }
+    .sub-item.in-view {
+        animation-delay: 0.5s; 
+    }
+}
 
 body{
     margin: 0;
@@ -58,6 +126,10 @@ body{
 
 
 /* learn-section */
+
+.learn-section{
+    margin-bottom: 100px;
+}
 
 .img-learn{
     height: 517px;
@@ -110,7 +182,7 @@ body{
     flex-wrap: nowrap;
     padding-left: 2%;
     padding-right: 2%;
-    gap: 30px;
+    gap: 50px;
 }
 
 .flex-2-item {
@@ -121,6 +193,7 @@ body{
     max-width: 660px; 
     margin: 20px 0; 
 }
+
 .ourprogram-title{
     margin-top: 0;
     font-family: "Roboto Slab", serif;
@@ -310,6 +383,9 @@ body{
     max-width: 80%;
 }
 
+.container{
+    margin-bottom: 100px;
+}
 .pretty-container {
     height: 120px; 
     display: flex;
